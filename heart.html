@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vintage Memories</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+    margin: 0;
+    background: #5a4636; /* Slight dark brown */
+    font-family: 'Playfair Display', serif;
+    overflow-x: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 150vh;
+    padding: 60px;
+}
+
+/* Torn paper effect */
+.torn {
+    position: absolute;
+    background: #efe3d3;
+    padding: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+    clip-path: polygon(
+        5% 0%, 95% 3%, 100% 20%, 97% 95%,
+        10% 100%, 0% 85%, 3% 20%
+    );
+    transform: rotate(-3deg);
+}
+
+.torn img {
+    width: 250px;
+    display: block;
+    border-radius: 5px;
+}
+
+/* Quotes */
+.quote {
+    position: absolute;
+    background: #f5e9da;
+    padding: 20px;
+    max-width: 280px;
+    font-size: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    clip-path: polygon(
+        3% 5%, 97% 0%, 100% 90%,
+        90% 100%, 0% 95%
+    );
+}
+
+.handwrite {
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+}
+
+/* Mobile */
+@media(max-width: 768px){
+    .torn img {
+        width: 180px;
+    }
+    .quote {
+        font-size: 16px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- 🖼 IMAGE 1 -->
+    <div class="torn" style="top:80px; left:120px;">
+        <img src="Private/photo1.jpeg">
+    </div>
+
+    <!-- 🖼 IMAGE 2 -->
+    <div class="torn" style="top:400px; right:150px; transform: rotate(4deg);">
+        <img src="Private/photo2.jpeg">
+    </div>
+
+    <!-- 🖼 IMAGE 3 -->
+    <div class="torn" style="top:750px; left:300px;">
+        <img src="images/photo3.jpg">
+    </div>
+
+    <!-- 💬 QUOTE 1 -->
+    <div class="quote handwrite" style="top:200px; right:300px;">
+        Ek gosta sngaychi ahe , bhetun sngtoo
+        Ky sangu tu mala kiti avdtess
+        Mojayla gelo tr Abhad Kami padel 
+        Pruthvi varcha paani Kami padel 
+        Surya parentachi lambi Kami padel
+        Aju bajuche hirvad Kami padel ❤️
+    </div>
+
+    <!-- 💬 QUOTE 2 -->
+    <div class="quote" style="top:650px; left:80px;">
+        "Some loves feel like old poetry —
+        soft, warm, and eternal."
+    </div>
+
+</div>
+
+</body>
+</html>
